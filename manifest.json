@@ -30,3 +30,13 @@
     }
   }
 }
+
+{
+  "permissions": [
+    "clipboardRead",
+    "clipboardWrite",
+    "storage",
+    "alarms"
+  ]
+}
+
