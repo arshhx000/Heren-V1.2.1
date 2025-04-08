@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Heren V1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1><img src="images/icon16.png" alt="Heren logo" height="25" > Heren V1 </h1>
+    
+    
+    <h6>You Permanent Auto Keeper</h6>
+    
+    <div class="top-controls">
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search...">
+        <button id="clear-search" class="clear-search-btn">&times;</button>
+      </div>
+      <button id="keep-button" class="keep-btn">Keep</button>
+    </div>
+    
+    <div class="divider"></div>
+    <div id="copied-texts-container">
+      <!-- Copied texts will be displayed here -->
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+<div id="keep-modal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Keep a Note</h2>
+      <span class="close-modal">&times;</span>
+    </div>
+    <div class="modal-body">
+      <textarea id="note-content" placeholder="Write your note here..."></textarea>
+    </div>
+    <div class="modal-footer">
+      <button id="save-note" class="save-btn">Save</button>
+    </div>
+  </div>
+</div>
+
+</html>
+
