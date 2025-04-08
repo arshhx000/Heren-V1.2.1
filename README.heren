@@ -1,0 +1,73 @@
+Heren Keep V1.2
+Description
+Heren Keep V1.2 is a browser extension designed to enhance productivity by automatically saving copied texts and allowing users to manually add notes. It includes features like search functionality, text truncation, and expand/collapse for long notes.
+
+Features
+Automatic Text Saving: Automatically saves copied texts along with the website name.
+
+Manual Notes: Add custom notes using the "Keep" button.
+
+Search Functionality: Search through saved texts and notes.
+
+Expand/Collapse Notes: Long notes are truncated to 100 characters, with an option to view the full text.
+
+Copy and Delete Options: Easily copy or delete saved texts and notes.
+
+Folder Structure
+Your extension folder contains the following files:
+
+text
+heren V1.2/
+├── manifest.json      # Configuration file for the browser extension
+├── popup.html         # HTML file for the extension's popup UI
+├── popup.js           # JavaScript file for popup logic
+├── styles.css         # CSS file for styling the popup UI
+├── foreground.js      # Content script for capturing copied text
+├── service-worker.js  # Background script for alarms and cleanup tasks
+└── images/
+    ├── icon16.png     # 16x16 icon for the extension
+    ├── icon48.png     # 48x48 icon for the extension
+    └── icon128.png    # 128x128 icon for the extension
+Installation Instructions
+For Chrome:
+Open Chrome and navigate to chrome://extensions/.
+
+Enable Developer Mode using the toggle in the top-right corner.
+
+Click Load unpacked and select your heren V1.2 folder.
+
+For Firefox:
+Open Firefox and navigate to about:debugging.
+
+Click This Firefox in the sidebar.
+
+Click Load Temporary Add-on and select your manifest.json file from the heren V1.2 folder.
+
+Usage Instructions
+Automatic Text Saving:
+Copy any text while browsing; it will be saved automatically along with the website name.
+
+Saved texts appear in the popup with options to copy or delete them.
+
+Manual Notes:
+Click the "Keep" button in the popup.
+
+Write your note in the modal that appears and click "Save."
+
+Saved notes will appear below copied texts.
+
+Search Functionality:
+Use the search bar at the top of the popup to find specific texts or notes.
+
+Matching results will be highlighted.
+
+Expand/Collapse Notes:
+Long notes are truncated to 100 characters with a "Click to expand" option.
+
+Click on a truncated note to view its full content; click again to collapse it.
+
+License
+This project is licensed under the MIT License.
+
+Contributing
+Feel free to submit issues or pull requests if you have suggestions or improvements!
