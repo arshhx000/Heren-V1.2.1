@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Heren V2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header-row">
+      <div class="brand-col">
+        <h1><img src="icon.png" alt="Heren logo" height="25"> Heren V2 </h1>
+        <h6>You Permanent Auto Keeper</h6>
+      </div>
+      <div class="actions-col">
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Search...">
+          <button id="clear-search" class="clear-search-btn">&times;</button>
+        </div>
+        <button class="keep-btn" id="keep-button">Keep</button>
+        <button id="theme-toggle" class="theme-toggle-btn">☾</button>
+      </div>
+    </div>
+    
+    <div class="divider"></div>
+    <div class="list-header">
+      <h3>Auto-Saved Texts</h3>
+      <button id="export-btn" class="export-small-btn">Export JSON</button>
+    </div>
+    <div id="copied-texts-container">
+      <!-- Copied texts will be displayed here -->
+    </div>
+  </div>
+
+  <div id="keep-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Keep a Note</h2>
+        <span class="close-modal">&times;</span>
+      </div>
+      <div class="modal-body">
+        <textarea id="note-content" placeholder="Write your note here..."></textarea>
+      </div>
+      <div class="modal-footer">
+        <button id="save-note" class="save-btn">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
